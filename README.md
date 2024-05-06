@@ -384,7 +384,7 @@ const WorkPackage = require('./models/WorkPackage');
 WorkPackage.findByOrg('organisation id that is found from token', { ....other queries here.... } );
 ```
 
-So, now you can see wherever the organisation scope is needed, we can use `findByOrg` and be sure that if we put any bad query that will not mix up data between tenants and this will prevent data breach because if you notice the plugin you will see the `organisation` is always being appended at the end.
+So, now you can see wherever the organisation scope is needed, we can use `findByOrg` and be sure that if we put any bad query that will not mix up data between tenants and this will prevent data breach because if you notice the plugin you will see the `organisation` is always being appended at the end. Moreover, if a valid `organisationId` is not present in the first argument this is result in a error.
 So hard fixing the `organisation` with its `id` protects you from accessing wrong organisations data.
 
 Also when reviewing codes and developing the features developers are forced to use the `findByOrg` function and this implements a consistant practice arocss the project.

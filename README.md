@@ -214,7 +214,7 @@ for better query scoping.
 
 Heads up: If you don't know how mongoose plugins work, read through the docs here [Plugins](https://mongoosejs.com/docs/plugins.html) before you proceed.
 
-Follwing code is a simplified version of my code that I already have used to build an application before that is currently in production.
+Follwing code is a simplified version of my code that I already have used to wrote an application before that is currently in production.
 ```javascript
 const mongoose = require("mongoose");
 const mongoosePaginate = require("mongoose-paginate-v2");

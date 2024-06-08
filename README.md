@@ -116,14 +116,14 @@ Remember the feature requirements? Notice in our current schema there is no way 
 and organisations or between the work-packages and the organisations. This means there is no tenancy feature yet.
 
 Also notice I have a membership collection that defines the relationship between a user and an organisation with appropriate user role.
-These information will be userfull later.
+These information will be usefull later.
 
 # Further development 
 
 By now you might be thinking to estabilish the relations, we can create some relationship collections just like **memberships** or we can
 simply put the `organisation` attribute in the **projects** and **work-packages** collections. 
 
-I would choose the later and put the following codes in the **projects** and **work-packages** collections. 
+I would choose the later(the rationale behind this decision is a topic itself to be discussed) and put the following codes in the **projects** and **work-packages** collections. 
 ```javascript
 organisation: {
   type: mongoose.Schema.Types.ObjectId,

@@ -353,7 +353,7 @@ const Project = mongoose.model('Project', projectSchema);
 module.exports = Project;
 ```
 
-Notice here we commented the `oranisation` attribute and don't need to use it explecitely anymore because that is binded inside
+Notice here we commented the `oranisation` attribute and don't need to use it explecitely anymore because that is bound inside
 the plugin. I only commented it to explain things. You can totally get rid of the commented block. Same approach is applicable for work-packages or any other collection that needs `organisation/tenant` scope
 
 Let's see the plugin in action. Remember our scoped query ?

@@ -1,4 +1,4 @@
-# Stroy
+# Story
 
 Imagine you are building a simple project management application that has follwing simple features 
 

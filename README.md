@@ -123,7 +123,7 @@ These information will be usefull later.
 By now you might be thinking to estabilish the relations, we can create some relationship collections just like **memberships** or we can
 simply put the `organisation` attribute in the **projects** and **work-packages** collections. 
 
-I would choose the later(the rationale behind this decision is a topic itself to be discussed) and put the following codes in the **projects** and **work-packages** collections. 
+I would choose the later (the rationale behind this decision is a topic itself to be discussed) and put the following codes in the **projects** and **work-packages** collections. 
 ```javascript
 organisation: {
   type: mongoose.Schema.Types.ObjectId,
